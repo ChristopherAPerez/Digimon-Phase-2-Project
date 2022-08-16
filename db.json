@@ -1,4 +1,41 @@
 {
-  "Digimon": [],
+  "Digimon": [
+    {
+      "name": "Agumon",
+      "img": "https://digimon.shadowsmith.com/img/agumon.jpg",
+      "level": "Rookie",
+      "id": 2
+    },
+    {
+      "name": "Monzaemon",
+      "img": "https://digimon.shadowsmith.com/img/monzaemon.jpg",
+      "level": "Ultimate",
+      "id": 3
+    },
+    {
+      "name": "Kokatorimon",
+      "img": "https://digimon.shadowsmith.com/img/kokatorimon.jpg",
+      "level": "Champion",
+      "id": 4
+    },
+    {
+      "name": "Piximon",
+      "img": "https://digimon.shadowsmith.com/img/piximon.jpg",
+      "level": "Ultimate",
+      "id": 5
+    },
+    {
+      "name": "Gomamon",
+      "img": "https://digimon.shadowsmith.com/img/gomamon.jpg",
+      "level": "Rookie",
+      "id": 6
+    },
+    {
+      "name": "Shellmon",
+      "img": "https://digimon.shadowsmith.com/img/shellmon.jpg",
+      "level": "Champion",
+      "id": 7
+    }
+  ],
   "New": []
 }

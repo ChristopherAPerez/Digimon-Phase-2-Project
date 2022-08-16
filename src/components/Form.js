@@ -37,7 +37,9 @@ function Form( { newDigimon, setNewDigimon } ){
         })
         .then((r) => r.json())
         .then((data) => setNewDigimon([...newDigimon, data]))
-        
+
+        setTextInput("")
+        setImgInput("")
     }
 
     return (
