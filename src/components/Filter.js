@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Form( { newDigi, setNewDigi } ){
+function Form( { newDigimon, setNewDigimon } ){
 
     const [textInput, setTextInput] = useState("")
     const [imgInput, setImgInput] = useState("")
@@ -36,11 +36,11 @@ function Form( { newDigi, setNewDigi } ){
             body: JSON.stringify(addDigi),
         })
         .then((r) => r.json())
-        .then((newDigimon) => setNewDigi([...newDigi, newDigimon]))
+        .then((digimon) => setNewDigi([...newDigimon, digimon]))
 
         
     }
-    
+
     return (
         <div className="Form">
             <form onSubmit={handleSubmit}>
