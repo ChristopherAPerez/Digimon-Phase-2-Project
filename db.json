@@ -1,0 +1,48 @@
+{
+    "Digimon": [
+      {
+        "name": "Punimon",
+        "img": "https://digimon.shadowsmith.com/img/punimon.jpg",
+        "level": "Fresh",
+        "id": 1
+      },
+      {
+        "name": "Tanemon",
+        "img": "https://digimon.shadowsmith.com/img/tanemon.jpg",
+        "level": "In Training",
+        "id": 2
+      },
+      {
+        "name": "Syakomon",
+        "img": "https://digimon.shadowsmith.com/img/syakomon.jpg",
+        "level": "Rookie",
+        "id": 3
+      },
+      {
+        "name": "Stingmon",
+        "img": "https://digimon.shadowsmith.com/img/stingmon.jpg",
+        "level": "Champion",
+        "id": 4
+      },
+      {
+        "name": "MetalTyrannomon",
+        "img": "https://digimon.shadowsmith.com/img/metaltyrannomon.jpg",
+        "level": "Ultimate",
+        "id": 5
+      },
+      {
+        "name": "MarineAngemon",
+        "img": "https://digimon.shadowsmith.com/img/marineangemon.jpg",
+        "level": "Mega",
+        "id": 6
+      }
+    ],
+    "New": [
+      {
+        "name": "Corgimon",
+        "img": "https://static.inspiremore.com/wp-content/uploads/2020/07/15120638/Gen-the-Corgi-with-funny-face-2.png",
+        "level": "Mega",
+        "id": 1
+      }
+    ]
+  }
