@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Filter( { setSearch, setLevel } ) {
+function Filter( { setFilter, setLevel } ) {
 
     const [input, setInput] = useState("")
 
@@ -10,7 +10,7 @@ function Filter( { setSearch, setLevel } ) {
         console.log(e.target.value)
 
         setInput(e.target.value)
-        setSearch(e.target.value)
+        setFilter(e.target.value)
     }
 
     function handleChange(e){
