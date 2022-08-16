@@ -3,7 +3,7 @@
 ## Overview
 The application allowes users to explore and build their very own Digimon Teams from the original Digimon collection. Also, users can create and upload their very own Digimon by including an image, level, and name. Lastly, users can also have their built rated! They can see if their teams need work, are satisfactory, or broken!
 
-## Features and Description
+### Features and Description
 - Home Page - the homepage welcomes users with a Digimon to greet them!
 
 ![](src/components/Images/HomePage.png) 
@@ -20,21 +20,41 @@ The application allowes users to explore and build their very own Digimon Teams 
 
 ![](src/components/Images/Upload.png) 
 
-### `npm start`
+#### How to Run
 
-Runs the app in the development mode.\
+`npm start`
+
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
+
+`json-server -p 8000 db.json`
+
+In a seperate terminal, run a json-server in port 8000. That way, the npm start and json-server will not conflict with one anopther.
+
 
 **LIVE LINK:**
 
 ## Installation
 
 ```
+npm install -g node-modules
+```
+
+```
 npm install -g json-server
 ```
+
+```
+npm install react-router-dom
+```
+
+```
+npm install react-router-dom@5.2.0
+```
+
 
 ## Authors and acknowledgment
 All images used in this application belong rightfully to Bandai Entertainment, Inc and the Digimon Company.
