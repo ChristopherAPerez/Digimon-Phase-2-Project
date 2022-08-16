@@ -1,11 +1,12 @@
 {
-  "Digimon": [],
-  "New": [
+  "Digimon": [
     {
-      "name": "Corgimon",
-      "img": "https://static.inspiremore.com/wp-content/uploads/2020/07/15120638/Gen-the-Corgi-with-funny-face-2.png",
-      "level": "Mega",
+      "name": "Greymon",
+      "img": "https://digimon.shadowsmith.com/img/greymon.jpg",
+      "level": "Champion",
       "id": 1
     }
+  ],
+  "New": [
   ]
 }

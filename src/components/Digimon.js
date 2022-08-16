@@ -26,7 +26,7 @@ function Digimon( { digimon, team, setTeam } ){
     }
 
     return (
-        <div className="test" onClick={handleClick}>
+        <div className="digimon" onClick={handleClick}>
             <p className='name'>{digimon.name}</p>
             <img width="165px" src={digimon.img} alt={digimon.name}/>
         </div>
