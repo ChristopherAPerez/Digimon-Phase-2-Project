@@ -40,3 +40,33 @@ function Form( { newDigi, setNewDigi } ){
 
         
     }
+    
+    return (
+        <div className="Form">
+            <form onSubmit={handleSubmit}>
+                <input name="name" placeholder='name...' value={textInput} onChange={handleName}/>
+                <input name="img" placeholder='img_URL...' value={imgInput} onChange={handleImage}/>
+                <select onChange={handleChange}>
+                    <option value=""></option>
+                    <option value="Fresh">Fresh</option>
+                    <option value="In Training">In Training</option>
+                    <option value="Rookie">Rookie</option>
+                    <option value="Champion">Champion</option>
+                    <option value="Ultimate">Ultimate</option>
+                    <option value="Mega">Mega</option>
+                </select>
+                <button>Add New Digimon!</button>
+            </form>
+            <div className="tryIt">
+                <h1>Give it a try:</h1>
+                <p>
+                Name: Corgimon<br/>
+                Image_URL: https://static.inspiremore.com/wp-content/uploads/2020/07/15120638/Gen-the-Corgi-with-funny-face-2.png<br/>
+                Level: Mega
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export default Form;
