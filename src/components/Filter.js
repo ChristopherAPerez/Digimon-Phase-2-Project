@@ -7,8 +7,6 @@ function Filter( { setFilter, setLevel } ) {
     function handleText(e){
         e.preventDefault()
 
-        console.log(e.target.value)
-
         setInput(e.target.value)
         setFilter(e.target.value)
     }
