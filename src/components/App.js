@@ -14,13 +14,13 @@ function App() {
 
   const [digimons, setDigimon] = useState([])
 
-  const [Team, setTeam] = useState([])
+  const [team, setTeam] = useState([])
 
-  const [Filter, setFilter] = useState("")
+  const [filter, setFilter] = useState("")
 
   const [level, setLevel] = useState("All")
 
-  const [new, setNew] = useState([])
+  const [newDigimon, setNewDigimon] = useState([])
 
   const [page, setPage] = useState("/")
 
@@ -39,11 +39,11 @@ function App() {
   useEffect(() => {
     fetch(`http://localhost:8000/New`)
     .then((r) => r.json())
-    .then((data) => setNew(data))
+    .then((data) => setNewDigimon(data))
   }, [])
 
   const filteredSearch = digimons.filter((digimon) => {
-    return digimon.name.toLowerCase().includes(search.toLowerCase())
+    return digimon.name.toLowerCase().includes(filter.toLowerCase())
   })
 
   const filteredLevel = filteredSearch.filter((digimon) => {
@@ -56,7 +56,27 @@ function App() {
 
   return (
     <div>
-
+          <NavBar onChangePage={setPage} />
+            <Switch>
+                <Route path="/RateMyTeam">
+                <RateMyTeam team={team}/>
+                </Route>
+                <Route path="/DigimonContainer">
+                <TeamContainer team={team} setTeam={setTeam}/>
+                <Filter setFilter={setFilter} setLevel={setLevel}/>
+                <DigimonContainer digimons={filteredLevel} team={team} setTeam={setTeam} />
+                </Route>
+                <Route path="/Form">
+                <Form new={newDigimon} setNewDigimon={setNewDigimon} />
+                <NewDigimonContainer new={newDigimon}/>
+                </Route>
+                <Route exact path="/">
+                <Header />
+                </Route>
+                <Route path="*">
+                    <h1>404 not found</h1>
+                </Route>
+            </Switch>
     </div>
   );
 }
