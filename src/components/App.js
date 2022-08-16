@@ -22,6 +22,8 @@ function App() {
 
   const [new, setNew] = useState([])
 
+  const [page, setPage] = useState("/")
+
   useEffect(() => {
     fetch(`https://digimon-api.vercel.app/api/digimon`)
     .then((r) => r.json())
@@ -39,6 +41,18 @@ function App() {
     .then((r) => r.json())
     .then((data) => setNew(data))
   }, [])
+
+  const filteredSearch = digimons.filter((digimon) => {
+    return digimon.name.toLowerCase().includes(search.toLowerCase())
+  })
+
+  const filteredLevel = filteredSearch.filter((digimon) => {
+    if(level === "All"){
+      return true
+    } else{
+      return digimon.level === level
+    }
+  })
 
   return (
     <div>
