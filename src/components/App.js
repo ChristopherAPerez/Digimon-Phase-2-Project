@@ -24,6 +24,8 @@ function App() {
 
   const [page, setPage] = useState("/")
 
+  console.log(page)
+
   useEffect(() => {
     fetch(`https://digimon-api.vercel.app/api/digimon`)
     .then((r) => r.json())
