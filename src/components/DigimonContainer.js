@@ -3,13 +3,13 @@ import Digimon from "./Digimon.js"
 
 function DigimonContainer( { digimons, team, setTeam } ){
 
+console.log(digimons)
+
     return (
         <div className="contain">
-            <ul>
             {digimons.map((digimon) => {
                 return <Digimon key={digimon.name} digimon={digimon} team={team} setTeam={setTeam} />
             })}
-            </ul>
         </div>
     )
 }

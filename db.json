@@ -1,12 +1,4 @@
 {
-  "Digimon": [
-    {
-      "name": "Greymon",
-      "img": "https://digimon.shadowsmith.com/img/greymon.jpg",
-      "level": "Champion",
-      "id": 1
-    }
-  ],
-  "New": [
-  ]
+  "Digimon": [],
+  "New": []
 }

@@ -70,7 +70,7 @@ function App() {
                 </Route>
                 <Route path="/Form">
                 <Form newDigimon={newDigimon} setNewDigimon={setNewDigimon} />
-                <NewDigimonContainer newDigimon={newDigimon}/>
+                <NewDigimonContainer newDigimon={newDigimon} setNewDigimon={setNewDigimon}/>
                 </Route>
                 <Route exact path="/">
                 <Header />

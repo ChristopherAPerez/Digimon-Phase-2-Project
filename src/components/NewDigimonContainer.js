@@ -1,23 +1,23 @@
 import React from 'react';
+import NewDigimon from "./NewDigimon.js"
 
-function NewContainer( { newDigimon } ){
+function NewDigimonContainer( { newDigimon, setNewDigimon } ){
+
+    function onDeleteDigimon(deletedDigimon) {
+        const updatedTeam = newDigimon.filter((digimon) => digimon.id !== deletedDigimon.id);
+        setNewDigimon(updatedTeam);
+      }
 
     return (
         <div >
             <h1 className="center">New Digimons!</h1>
-            <ul className='new'>
-                {newDigimon.map((digimon) => {
+            {newDigimon.map((digimon) => {
                 return  (
-                <div key={digimon.id}>
-                    <p>{digimon.name}</p>
-                    <img width="165px" src={digimon.img} alt={digimon.name}/>
-                </div>
+                <NewDigimon key={digimon.id} digimon={digimon} onDeleteDigimon={onDeleteDigimon}/>
                 )
             })}
-            </ul>
-            
         </div>
     )
 }
 
-export default NewContainer;
+export default NewDigimonContainer;

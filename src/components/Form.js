@@ -36,8 +36,7 @@ function Form( { newDigimon, setNewDigimon } ){
             body: JSON.stringify(addDigi),
         })
         .then((r) => r.json())
-        .then((digimon) => setNewDigimon([...newDigimon, digimon]))
-
+        .then((data) => setNewDigimon([...newDigimon, data]))
         
     }
 

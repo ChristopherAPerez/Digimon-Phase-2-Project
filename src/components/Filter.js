@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Sort( { setSearch, setLevel } ) {
+function Filter( { setSearch, setLevel } ) {
 
     const [input, setInput] = useState("")
 
@@ -36,4 +36,4 @@ function Sort( { setSearch, setLevel } ) {
     );
 }
 
-export default Sort;
+export default Filter;
