@@ -3,8 +3,6 @@ import Digimon from "./Digimon.js"
 
 function DigimonContainer( { digimons, team, setTeam } ){
 
-console.log(digimons)
-
     return (
         <div className="contain">
             {digimons.map((digimon) => {
