@@ -22,6 +22,24 @@ function App() {
 
   const [new, setNew] = useState([])
 
+  useEffect(() => {
+    fetch(`https://digimon-api.vercel.app/api/digimon`)
+    .then((r) => r.json())
+    .then((data) => setDigimon(data))
+  }, [])
+  
+  useEffect(() => {
+    fetch(`http://localhost:8000/Digimon`)
+    .then((r) => r.json())
+    .then((data) => setTeam(data))
+  }, [])
+
+  useEffect(() => {
+    fetch(`http://localhost:8000/New`)
+    .then((r) => r.json())
+    .then((data) => setNew(data))
+  }, [])
+
   return (
     <div>
 
