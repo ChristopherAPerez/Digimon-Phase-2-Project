@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Team from "./DigiTeam.js"
+import Team from "./Team.js"
 
 function RateMyTeam( { team } ){
 
@@ -10,7 +10,7 @@ function RateMyTeam( { team } ){
 
         setScale(0)
 
-        const teamLevel = digiTeam.map((digimon) => {
+        const teamLevel = team.map((digimon) => {
             if(digimon.level === "Fresh"){
                 return 1
             } else if(digimon.level === "In Training"){
@@ -47,3 +47,18 @@ function RateMyTeam( { team } ){
         }
 
     }
+
+    return (
+        <div className='rateContainer'>
+            <p className='join'>{scale} Level, {comment}</p>
+            <div className="join" >
+                <button onClick={handleClick}>Team Rating!</button>
+            </div>
+            {team.map((digimon) => {
+                return <Team key={digimon.id} digimon={digimon} />
+            })}
+        </div>
+    )
+}
+
+export default RateMyTeam;
