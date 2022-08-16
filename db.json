@@ -1,36 +1,4 @@
 {
-  "Digimon": [
-    {
-      "name": "Armadillomon",
-      "img": "https://digimon.shadowsmith.com/img/armadillomon.jpg",
-      "level": "Rookie",
-      "id": 1
-    },
-    {
-      "name": "DemiVeemon",
-      "img": "https://digimon.shadowsmith.com/img/demiveemon.jpg",
-      "level": "Training",
-      "id": 2
-    },
-    {
-      "name": "Daemon",
-      "img": "https://digimon.shadowsmith.com/img/daemon.jpg",
-      "level": "Mega",
-      "id": 3
-    },
-    {
-      "name": "KingEtemon",
-      "img": "https://digimon.shadowsmith.com/img/kingetemon.jpg",
-      "level": "Mega",
-      "id": 4
-    }
-  ],
-  "New": [
-    {
-      "name": "Corgimon",
-      "img": "https://static.inspiremore.com/wp-content/uploads/2020/07/15120638/Gen-the-Corgi-with-funny-face-2.png",
-      "level": "Mega",
-      "id": 1
-    }
-  ]
+  "Digimon": [],
+  "New": []
 }
