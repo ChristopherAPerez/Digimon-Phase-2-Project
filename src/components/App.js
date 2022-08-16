@@ -67,8 +67,8 @@ function App() {
                 <DigimonContainer digimons={filteredLevel} team={team} setTeam={setTeam} />
                 </Route>
                 <Route path="/Form">
-                <Form new={newDigimon} setNewDigimon={setNewDigimon} />
-                <NewDigimonContainer new={newDigimon}/>
+                <Form newDigimon={newDigimon} setNewDigimon={setNewDigimon} />
+                <NewDigimonContainer newDigimon={newDigimon}/>
                 </Route>
                 <Route exact path="/">
                 <Header />
