@@ -3,6 +3,8 @@
 ## Overview
 The application allowes users to explore and build their very own Digimon Teams from the original Digimon collection. Also, users can create and upload their very own Digimon by including an image, level, and name. Lastly, users can also have their built rated! They can see if their teams need work, are satisfactory, or broken!
 
+**LIVE LINK:** https://youtu.be/X2qPi2EO9V0
+
 ### Features and Description
 - Home Page - the homepage welcomes users with a Digimon to greet them!
 
@@ -33,9 +35,6 @@ You may also see any lint errors in the console.
 `json-server -p 8000 db.json`
 
 In a seperate terminal, run a json-server in port 8000. That way, the npm start and json-server will not conflict with one another.
-
-
-**LIVE LINK:** https://youtu.be/X2qPi2EO9V0
 
 ## Installation
 
