@@ -11,9 +11,20 @@ import './App.css';
 import { Switch, Route } from "react-router-dom";
 
 function App() {
+
+  const [digimons, setDigimon] = useState([])
+
+  const [Team, setTeam] = useState([])
+
+  const [Filter, setFilter] = useState("")
+
+  const [level, setLevel] = useState("All")
+
+  const [new, setNew] = useState([])
+
   return (
     <div>
-      
+
     </div>
   );
 }
